@@ -1,0 +1,34 @@
+div.accordion-collapse {
+  margin: 1rem;
+}
+
+div.accordion-item.subCategory {
+  margin-top: 0.5rem;
+}
+label.buttonLabel {
+  margin-left: 0.5rem;
+}
+label.form-check-label {
+  margin-left: 0.5rem;
+}
+
+div.TwoColumnItemContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.directionY {
+  flex-direction: column;
+}
+
+div.TwoColumnItem {
+  width: 50%;
+}
+
+div.SingleColumnItem {
+  width: 100%;
+}
+
+div.form-check {
+  margin-bottom: 0 !important;
+}
