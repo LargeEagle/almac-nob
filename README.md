@@ -24,3 +24,33 @@ backend:<br>
 data sample:<br>
 ![image](https://user-images.githubusercontent.com/72810908/231707293-6a87e7f3-fc5b-44bb-b6bc-2684e1f37f4a.png)
 
+
+
+### How to use:<br><br>
+
+set up attributes for each question item:<br><br>
+
+checkbox-type="category" : make question item to question category 
+![image](https://user-images.githubusercontent.com/72810908/231713696-38831db0-931e-48b2-9eed-a9958769e9d5.png)
+
+<br>
+
+checkbox-type="item" : make question item to question item
+
+![image](https://user-images.githubusercontent.com/72810908/231713791-ff15ed81-3e58-4d1a-a6f3-bdfa32b6878a.png)
+
+<br><br>
+ 
+<span checkbox-type='category' cat-id='1' single-select='true'>[C] <strong>User of Logistics Services</strong> <span id="nobUserOfLogistics"></span>
+<span checkbox-type='item' parent-cat-id='1'>Distributor</span>
+<span checkbox-type='item' parent-cat-id='1'>e-tailer</span>
+<span checkbox-type='item' parent-cat-id='1'>Export Agent</span>
+<span checkbox-type='item' parent-cat-id='1'>Exporter</span>
+<span checkbox-type='item' parent-cat-id='1'>Import Agent</span>
+<span checkbox-type='item' parent-cat-id='1'>Importer</span>
+<span checkbox-type='item' parent-cat-id='1'>Manufacturer / Supplier</span>
+<span checkbox-type='item' parent-cat-id='1'>Retailer</span>
+<span checkbox-type='item' parent-cat-id='1'>Wholesaler</span>
+<span checkbox-type='item' parent-cat-id='1'>Other (please specify)</span>
+
+
