@@ -40,7 +40,16 @@ checkbox-type="item" : make question item to question item
 ![image](https://user-images.githubusercontent.com/72810908/231713791-ff15ed81-3e58-4d1a-a6f3-bdfa32b6878a.png)
 
 <br><br>
+cat-id="1" : assign a unique id for category<br><br>
+
+
+parent-cat-id='1' : assign same id as cat-id to link up category and question id<br><br>
+
+ single-select="true" : add this attributes to setup up single selection for children item<br><br>
  
+
+
+``
 <span checkbox-type='category' cat-id='1' single-select='true'>[C] <strong>User of Logistics Services</strong> <span id="nobUserOfLogistics"></span>
 <span checkbox-type='item' parent-cat-id='1'>Distributor</span>
 <span checkbox-type='item' parent-cat-id='1'>e-tailer</span>
@@ -52,5 +61,20 @@ checkbox-type="item" : make question item to question item
 <span checkbox-type='item' parent-cat-id='1'>Retailer</span>
 <span checkbox-type='item' parent-cat-id='1'>Wholesaler</span>
 <span checkbox-type='item' parent-cat-id='1'>Other (please specify)</span>
+``
+
+
+create a new object, noBQuestion takes two parameters, question id and type of category Button.<br>
+
+first parameter is a array of id<br>
+second parameter is a string type, "defaultopen", "alwayson", "lookingfordefaultopen"<br>
+"defaultopen" can set category question to expend by default<br>
+"alwayson" can set category question alway expend<br>
+"lookingfordefaultopen" can remove category question checkbox<br>
+
+sample:<br>
+var LookingForNOB = new noBQuestion(LookingForNODid,"LookingForDefaultOpen");<br><br>
+
+
 
 
