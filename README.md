@@ -34,13 +34,20 @@ checkbox-type="category" : make question item to question category
 ![image](https://user-images.githubusercontent.com/72810908/231713696-38831db0-931e-48b2-9eed-a9958769e9d5.png)
 
 <br>
+cat-id="1" : assign a unique id for category<br><br>
 
-checkbox-type="item" : make question item to question item
+items-direction="y" : set children element <br><br>
+
+column="2" : set children element to 2 column<br><br>
+
+checkbox-type="item" : make question item to place question item direction to vertical<br><br>
+
+
 
 ![image](https://user-images.githubusercontent.com/72810908/231713791-ff15ed81-3e58-4d1a-a6f3-bdfa32b6878a.png)
 
 <br><br>
-cat-id="1" : assign a unique id for category<br><br>
+
 
 
 parent-cat-id='1' : assign same id as cat-id to link up category and question id<br><br>
