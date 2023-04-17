@@ -6,6 +6,9 @@ https://form.hktdc.com/UI_RegistrationSite/Registration/RegistrationForm.aspx?FO
 [ALMAC2022_BM_testing.xlsx](https://github.com/LargeEagle/almac-nob/files/11220143/ALMAC2022_BM_testing.xlsx)
 
 <br><br><br>
+
+### reference
+<br><br><br>
 #### For NOB(Nature of Business) question:<br><br>
 
 fontend:<br>
@@ -28,20 +31,23 @@ data sample:<br>
 
 ### How to use:<br><br>
 
-set up attributes for each question item:<br><br>
+#### 1.input question item:<br><br>
 
+
+attributes reference:<br><br>
 checkbox-type="category" : make question item to question category 
 ![image](https://user-images.githubusercontent.com/72810908/231713696-38831db0-931e-48b2-9eed-a9958769e9d5.png)
 
 <br>
 cat-id="1" : assign a unique id for category<br><br>
 
+seq="1" : set up element order<br><br>
+
 items-direction="y" : set children element <br><br>
 
 column="2" : set children element to 2 column<br><br>
 
-checkbox-type="item" : make question item to place question item direction to vertical<br><br>
-
+single-select="true" : add this attributes to setup up single selection for children item<br><br>
 
 
 ![image](https://user-images.githubusercontent.com/72810908/231713791-ff15ed81-3e58-4d1a-a6f3-bdfa32b6878a.png)
@@ -50,28 +56,40 @@ checkbox-type="item" : make question item to place question item direction to ve
 
 
 
+
 parent-cat-id='1' : assign same id as cat-id to link up category and question id<br><br>
 
- single-select="true" : add this attributes to setup up single selection for children item<br><br>
+checkbox-type="item" : make question item to place question item direction to vertical<br><br>
  
 
 
+### code sample:
 ``
-<span checkbox-type='category' cat-id='1' single-select='true'>[C] <strong>User of Logistics Services</strong> <span id="nobUserOfLogistics"></span>
-<span checkbox-type='item' parent-cat-id='1'>Distributor</span>
-<span checkbox-type='item' parent-cat-id='1'>e-tailer</span>
-<span checkbox-type='item' parent-cat-id='1'>Export Agent</span>
-<span checkbox-type='item' parent-cat-id='1'>Exporter</span>
-<span checkbox-type='item' parent-cat-id='1'>Import Agent</span>
-<span checkbox-type='item' parent-cat-id='1'>Importer</span>
-<span checkbox-type='item' parent-cat-id='1'>Manufacturer / Supplier</span>
-<span checkbox-type='item' parent-cat-id='1'>Retailer</span>
-<span checkbox-type='item' parent-cat-id='1'>Wholesaler</span>
-<span checkbox-type='item' parent-cat-id='1'>Other (please specify)</span>
+<span seq="1" checkbox-type='category' cat-id='1' single-select='true' column="2" items-direction="y">[C] <strong>User of Logistics Services</strong> <span id="nobUserOfLogistics"></span>
+<span seq="2"  checkbox-type='item' parent-cat-id='1'>Distributor</span>
+<span seq="3"  checkbox-type='item' parent-cat-id='1'>e-tailer</span>
+<span seq="4"  checkbox-type='item' parent-cat-id='1'>Export Agent</span>
+<span seq="5"  checkbox-type='item' parent-cat-id='1'>Exporter</span>
+<span seq="6"  checkbox-type='item' parent-cat-id='1'>Import Agent</span>
+<span seq="7"  checkbox-type='item' parent-cat-id='1'>Importer</span>
+<span seq="8"  checkbox-type='item' parent-cat-id='1'>Manufacturer / Supplier</span>
+<span seq="9"  checkbox-type='item' parent-cat-id='1'>Retailer</span>
+<span seq="10"  checkbox-type='item' parent-cat-id='1'>Wholesaler</span>
+<span seq="11"  checkbox-type='item' parent-cat-id='1'>Other (please specify)</span>
 ``
 
 
-create a new object, noBQuestion takes two parameters, question id and type of category Button.<br>
+### 2.javascript: <br><br>
+
+
+
+create a new object, noBQuestion takes two parameters, question id and type of category Button.<br><br>
+
+
+sample:<br>
+var LookingForNOB = new noBQuestion(LookingForNODid,"LookingForDefaultOpen");<br><br>
+
+
 
 first parameter is a array of id<br>
 second parameter is a string type, "defaultopen", "alwayson", "lookingfordefaultopen"<br>
@@ -79,8 +97,7 @@ second parameter is a string type, "defaultopen", "alwayson", "lookingfordefault
 "alwayson" can set category question alway expend<br>
 "lookingfordefaultopen" can remove category question checkbox<br>
 
-sample:<br>
-var LookingForNOB = new noBQuestion(LookingForNODid,"LookingForDefaultOpen");<br><br>
+
 
 
 
