@@ -1,5 +1,5 @@
 ## Introduce:
-This library purpose is builder custom UI to fulfil user requriement.
+This library purpose is build up a custom checkbox list UI to fulfil user requriement.
 
 
 
@@ -35,39 +35,22 @@ expended:<br>
 
 ## How to use:<br><br>
 
-#### 1.input question item:<br><br>
+### 1.input question item:<br>
 
 
-attributes reference:<br><br>
-checkbox-type="category" : make question item to question category 
-![image](https://user-images.githubusercontent.com/72810908/231713696-38831db0-931e-48b2-9eed-a9958769e9d5.png)
-
-<br>
-cat-id="1" : assign a unique id for category<br><br>
-
-seq="1" : set up element order<br><br>
-
-items-direction="y" : set children element <br><br>
-
-column="2" : set children element to 2 column<br><br>
-
-single-select="true" : add this attributes to setup up single selection for children item<br><br>
-
-
-![image](https://user-images.githubusercontent.com/72810908/231713791-ff15ed81-3e58-4d1a-a6f3-bdfa32b6878a.png)
-
-<br><br>
-
-
-
-
-parent-cat-id='1' : assign same id as cat-id to link up category and question id<br><br>
-
+#### attributes:<br><br>
+checkbox-type="category" : make question item to question category<br>
+cat-id="1" : assign a unique id for category<br>
+seq="1" : set up element order<br>
+items-direction="y" : set children element<br>
+column="2" : set children element to 2 column<br>
+single-select="true" : add this attributes to setup up single selection for children item<br>
+parent-cat-id='1' : assign same id as cat-id to link up category and question id<br>
 checkbox-type="item" : make question item to place question item direction to vertical<br><br>
  
 
 
-### code sample:
+#### code sample:
 ``
 <span seq="1" checkbox-type='category' cat-id='1' single-select='true' column="2" items-direction="y">[C] <strong>User of Logistics Services</strong> <span id="nobUserOfLogistics"></span>
 <span seq="2"  checkbox-type='item' parent-cat-id='1'>Distributor</span>
