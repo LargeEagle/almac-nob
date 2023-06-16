@@ -38,20 +38,22 @@ expended:<br>
 ### 1.input question item:<br>
 
 
-#### attributes:<br><br>
-checkbox-type="category" : make question item to question category<br>
-cat-id="1" : assign a unique id for category<br>
-seq="1" : set up element order<br>
-items-direction="y" : set children element<br>
-column="2" : set children element to 2 column<br>
-single-select="true" : add this attributes to setup up single selection for children item<br>
-parent-cat-id='1' : assign same id as cat-id to link up category and question id<br>
-checkbox-type="item" : make question item to place question item direction to vertical<br><br>
+
+| Attributes |  | 
+|----------|:-------------:|
+checkbox-type="category"|make question item to question category<br>
+cat-id="1" | assign a unique id for category<br>
+seq="1" | set up element order<br>
+items-direction="y" | set children element<br>
+column="2" | set children element to 2 column<br>
+single-select="true" | add this attributes to setup up single selection for children item<br>
+parent-cat-id='1' | assign same id as cat-id to link up category and question id<br>
+checkbox-type="item" | make question item to place question item direction to vertical<br><br>
  
 
 
 #### code sample:
-``
+```
 <span seq="1" checkbox-type='category' cat-id='1' single-select='true' column="2" items-direction="y">[C] <strong>User of Logistics Services</strong> <span id="nobUserOfLogistics"></span>
 <span seq="2"  checkbox-type='item' parent-cat-id='1'>Distributor</span>
 <span seq="3"  checkbox-type='item' parent-cat-id='1'>e-tailer</span>
@@ -63,7 +65,7 @@ checkbox-type="item" : make question item to place question item direction to ve
 <span seq="9"  checkbox-type='item' parent-cat-id='1'>Retailer</span>
 <span seq="10"  checkbox-type='item' parent-cat-id='1'>Wholesaler</span>
 <span seq="11"  checkbox-type='item' parent-cat-id='1'>Other (please specify)</span>
-``
+```
 
 
 ### 2.javascript: <br><br>
