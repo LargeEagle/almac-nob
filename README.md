@@ -53,7 +53,7 @@ checkbox-type="item" | make question item to place question item direction to ve
 
 
 #### code sample:
-```
+```HTML
 <span seq="1" checkbox-type='category' cat-id='1' single-select='true' column="2" items-direction="y">[C] <strong>User of Logistics Services</strong> <span id="nobUserOfLogistics"></span>
 <span seq="2"  checkbox-type='item' parent-cat-id='1'>Distributor</span>
 <span seq="3"  checkbox-type='item' parent-cat-id='1'>e-tailer</span>
